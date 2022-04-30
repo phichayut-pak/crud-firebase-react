@@ -70,7 +70,7 @@ const App = () => {
 
   const onClickCardHandler = (title, image, timestamp, id) => {
 
-    const {value: editor } = MySwal.fire({
+    MySwal.fire({
       html: <div className="">
               <label htmlFor="title" className="inline-block relative right-[5.7rem]">Title:</label>
               <input id="title" type='text' placeholder={title} className="my-2 block m-auto px-3 py-1 border-2 border-black rounded-xl" />
@@ -128,7 +128,7 @@ const App = () => {
         {data.length === 0 ? (
           <h1 className="font-['Poppins'] text-2xl">Loading...</h1>
         ) : (
-          <div className="grid grid-cols-10 grid-flow-row justify-items-center content-center space-x-5 space-y-5">
+          <div className="grid grid-cols-10 grid-flow-row justify-items-center content-center gap-x-5 gap-y-5">
             <AnimatePresence>
               {data.map((item) => {
                 return (
