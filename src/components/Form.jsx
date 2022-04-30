@@ -13,7 +13,7 @@ const Form = ({ onSendValue }) => {
   }
 
   return (
-    <div className="">
+    <div className="mt-40">
       <form className='px-5 py-2 bg-white rounded-xl' onSubmit={onSubmitHandler}>
         <input className="block my-2 bg-indigo-300 px-3 py-1 rounded-lg text-black placeholder:text-black font-['Poppins'] focus:outline-0" type="text" placeholder="Title" ref={title}/>
         <input className="block my-2 bg-indigo-300 px-3 py-1 rounded-lg text-black placeholder:text-black font-['Poppins'] focus:outline-0" type="text" placeholder="Image URL" ref={image}/>

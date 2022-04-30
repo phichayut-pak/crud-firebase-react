@@ -10,7 +10,7 @@ const Card = ({ className, title, image, timestamp, id, onRemoveItem, onClickCar
         <img src={image} className="w-40 h-40" alt="" />
       </div>
       
-      <h1 className="pb-5 font-['Poppins']">{title}</h1>
+      <h1 className="pb-5 font-poppins font-medium">{title}</h1>
     </div>
   )
 }

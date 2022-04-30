@@ -91,21 +91,21 @@ const App = () => {
         if((changedTitle === "") && (changedImage !== image)) {
           MySwal.fire({
             icon: 'success',
-            title: <p className="font-['Poppins'] font-normal">Success</p>
+            title: <p className="font-poppins font-normal">Success</p>
           })
 
           updateData(title, changedImage, timestamp, id)
         } else if((changedTitle !== title) && (changedImage === "")) {
           MySwal.fire({
             icon: 'success',
-            title: <p className="font-['Poppins'] font-normal">Success</p>
+            title: <p className="font-poppins font-normal">Success</p>
           })
 
           updateData(changedTitle, image, timestamp, id)
         } else if((changedTitle !== title) && (changedImage !== image)) {
           MySwal.fire({
             icon: 'success',
-            title: <p className="font-['Poppins'] font-normal">Success</p>
+            title: <p className="font-poppins font-normal">Success</p>
           })
     
           updateData(changedTitle, changedImage, timestamp, id)  
@@ -126,9 +126,9 @@ const App = () => {
       </div>
       <div className="mt-10 mx-10">
         {data.length === 0 ? (
-          <h1 className="font-['Poppins'] text-2xl">Loading...</h1>
+          <h1 className="font-poppins text-2xl">Loading...</h1>
         ) : (
-          <div className="grid grid-cols-10 grid-flow-row justify-items-center content-center gap-x-5 gap-y-5">
+          <div className="grid grid-cols-3 md:grid-cols-5 grid-flow-row justify-items-center content-center gap-x-5 gap-y-5">
             <AnimatePresence>
               {data.map((item) => {
                 return (
