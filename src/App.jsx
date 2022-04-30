@@ -128,7 +128,7 @@ const App = () => {
         {data.length === 0 ? (
           <h1 className="font-poppins text-2xl">Loading...</h1>
         ) : (
-          <div className="grid grid-cols-3 md:grid-cols-5 grid-flow-row justify-items-center content-center gap-x-5 gap-y-5">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 grid-flow-row justify-items-center content-center gap-x-5 gap-y-5">
             <AnimatePresence>
               {data.map((item) => {
                 return (
